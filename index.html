@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAS.CO.IN</title>
+    <style>
+        /* Brutalist-inspired design */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            font-family: monospace;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #d9d9d9;
+            padding: 2rem;
+            border: 8px solid #000;
+            box-shadow: 15px 15px 0 #000;
+        }
+        
+        .logo {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 8rem;
+            font-weight: bold;
+            letter-spacing: -0.5rem;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        
+        .angle {
+            position: absolute;
+            background-color: #000;
+            z-index: -1;
+        }
+        
+        .angle-1 {
+            width: 40%;
+            height: 40px;
+            top: 30%;
+            left: -20px;
+            transform: rotate(-45deg);
+        }
+        
+        .angle-2 {
+            width: 40%;
+            height: 40px;
+            bottom: 30%;
+            right: -20px;
+            transform: rotate(45deg);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="angle angle-1"></div>
+        <div class="angle angle-2"></div>
+        <div class="logo">FIAS.CO.IN</div>
+    </div>
+</body>
+</html>
